@@ -23,9 +23,13 @@
     min-height: 100%;
     /*padding-bottom:100px;*/
 }
+
+
 .container {
   padding-top: 20px;
 }
+
+
 .infoBlock {
   background: rgba(51, 51, 51, 0.6);
   color: #fff;
@@ -56,6 +60,16 @@ body {
   font-size: 16px;
 }
 
+.logo {
+  width: 200px;
+}
+
+@media (min-width:767px) { 
+  .logo {
+    width:400px;
+  }
+}
+
 </style>
 
 <div class="bgcontainer">
@@ -63,7 +77,7 @@ body {
     <div class="row">
         <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center">
           <div class="text-center">
-              <img src="./logo.png" alt="UXDX">
+              <img src="./logo.png" alt="UXDX" class="logo">
           </div>
           
           <div class="row">
@@ -73,11 +87,15 @@ body {
                   <h2>Sign up for more information</h2>
                   <form action="//exportsummit.us10.list-manage.com/subscribe/post?u=df114ce84c2a9c6770353ebed&amp;id=f7ff78a817" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <div class="input-group">
-                          <input class="form-control input-lg" placeholder="Enter your email address" type="email" name="EMAIL" required id="mce-EMAIL" >
-                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                          <div style="position: absolute; left: -5000px;"><input type="text" name="b_df114ce84c2a9c6770353ebed_e2a33c410a" tabindex="-1" value=""></div>
-                          <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit" value="Subscribe" id="mc-embedded-subscribe">OK</button></span>
-                      </div>
+                        <div class="col-sm-9 col-xs-12">
+                            <input class="form-control input-lg" placeholder="Enter your email" type="email" name="EMAIL" required id="mce-EMAIL" >
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_df114ce84c2a9c6770353ebed_e2a33c410a" tabindex="-1" value=""></div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit" value="Subscribe" id="mc-embedded-subscribe">Submit</button></span>
+                        </div>
+                     </div>
                   </form>
               </div>
           </div>
