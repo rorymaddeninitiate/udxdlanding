@@ -1,6 +1,6 @@
 <html><head>
     <meta charset="utf-8">
-    <title>UXDX - User Experience, Experience Design, Developer Experience - Conference in Dublin in Novemebr 2016</title>
+    <title>UXDX Conference - User Experience, Experience Design, Developer Experience - Dublin, November 2016</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -64,9 +64,51 @@ body {
   width: 200px;
 }
 
-@media (min-width:767px) { 
+.logoBlock > h3 {
+  margin-top: -25px;
+  margin-bottom: 40px;
+}
+
+.survey {
+/*   margin: 20px; */
+  padding-top: 5px;
+  min-height: 150px;
+  color: white;
+}
+.survey > h3:hover {
+  text-decoration: none
+}
+.survey > h2:hover {
+  text-decoration: none
+}
+
+.paySurvey {
+  background-color: #5fbed2;
+}
+.industrySurvey {
+  background-color: #e2ac55;
+  color: #C19349;
+}
+.futureSurvey {
+  background-color: rgb(133,198,186);
+  color: #73ABA0;
+}
+
+
+.newsletterSignupRow {
+  padding-top: 40px;
+}
+
+.registerButton {
+  margin-top: 10px;
+}
+
+@media (min-width:767px) {
   .logo {
     width:400px;
+  }
+  .registerButton {
+    margin-top: 0px;
   }
 }
 
@@ -74,45 +116,72 @@ body {
 
 <div class="bgcontainer">
   <div class="container">
-    <div class="row">
-        <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center">
-          <div class="text-center">
-              <img src="./logo.png" alt="UXDX" class="logo">
-          </div>
-          
-          <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12 text-center infoBlock">
-                  <h1>Bringing together the leaders in the UX, XD and DX space</h1>
-                  <h3>Dublin - November 2016</h3>
-                  <h2>Sign up for more information</h2>
-                  <form action="//exportsummit.us10.list-manage.com/subscribe/post?u=df114ce84c2a9c6770353ebed&amp;id=f7ff78a817" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div class="input-group">
-                        <div class="col-sm-9 col-xs-12">
-                            <input class="form-control input-lg" placeholder="Enter your email" type="email" name="EMAIL" required id="mce-EMAIL" >
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_df114ce84c2a9c6770353ebed_e2a33c410a" tabindex="-1" value=""></div>
-                        </div>
-                        <div class="col-sm-3 col-xs-12">
-                            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit" value="Subscribe" id="mc-embedded-subscribe">Submit</button></span>
-                        </div>
-                     </div>
-                  </form>
-              </div>
-          </div>
-          <br>
-          <!-- <div class="text-center">
-              <h2>Follow us for more information</h2>
-          </div> -->
-          <div class="row">
-              <div class="col-lg-12 text-center v-center" style="font-size: 39pt;">
-                  <a href="https://www.twitter.com/uxdxconf"><span class="avatar"><i class="fa fa-twitter"></i></span></a>
-                  <!-- <a href="https://www.linkedin.com/company/export-summit"><span class="avatar"><i class="fa fa-linkedin"></i></span></a> -->
-                  <!-- <a href="#"><span class="avatar"><i class="fa fa-facebook"></i></span></a>
-                  <a href="#"><span class="avatar"><i class="fa fa-github"></i></span></a> -->
-              </div>
-          </div>
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="text-center logoBlock">
+            <img src="./logo.png" alt="UXDX" class="logo">
+            <h3>Dublin - November 2016</h3>
+
         </div>
 
+        <div class="row text-center infoBlock">
+            <div class="col-sm-10 col-sm-offset-1">
+<!--               <h1>Bringing together the leaders in the UX, XD and DX space</h1> -->
+
+                <h1>The State of Digital</h1>
+                <h2>Survey 2016</h2>
+                <h3>Please complete the surveys below to help us uncover the state of the digital industry in Ireland.</h3>
+                <a href="pay.html">
+                  <div class="col-sm-4 col-xs-12 text-center survey paySurvey">
+                    <h3>The State of Digital</h3>
+                    <h2>Pay</h2>
+                    <p>Survey Open</p>
+                  </div>
+                 </a>
+                <div class="col-sm-4 col-xs-12 text-center survey industrySurvey">
+                  <h3>The State of Digital</h3>
+                  <h2>Challenges</h2>
+                  <p>Opening soon</p>
+                </div>
+                <div class="col-sm-4 col-xs-12 text-center survey futureSurvey">
+                  <h3>The State of Digital</h3>
+                  <h2>Future</h2>
+                  <p>Opening soon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row newsletterSignupRow">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+                <h2>Sign up for more information</h2>
+                <form action="//exportsummit.us10.list-manage.com/subscribe/post?u=df114ce84c2a9c6770353ebed&amp;id=f7ff78a817" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="input-group">
+                      <div class="col-sm-9 col-xs-12">
+                          <input class="form-control input-lg" placeholder="Enter your email" type="email" name="EMAIL" required id="mce-EMAIL" >
+                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                          <div style="position: absolute; left: -5000px;"><input type="text" name="b_df114ce84c2a9c6770353ebed_e2a33c410a" tabindex="-1" value=""></div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                          <span class="input-group-btn"><button class="btn btn-lg btn-primary registerButton" type="submit" value="Subscribe" id="mc-embedded-subscribe">Submit</button></span>
+                      </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <!-- <div class="text-center">
+            <h2>Follow us for more information</h2>
+        </div> -->
+        <div class="row">
+            <div class="col-lg-12 text-center v-center" style="font-size: 39pt;">
+                <a href="https://www.twitter.com/uxdxconf"><span class="avatar"><i class="fa fa-twitter"></i></span></a>
+                <!-- <a href="https://www.linkedin.com/company/export-summit"><span class="avatar"><i class="fa fa-linkedin"></i></span></a> -->
+                <!-- <a href="#"><span class="avatar"><i class="fa fa-facebook"></i></span></a>
+                <a href="#"><span class="avatar"><i class="fa fa-github"></i></span></a> -->
+            </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
